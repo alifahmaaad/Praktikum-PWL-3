@@ -1,0 +1,83 @@
+[
+  {
+    "testcase_name": "Field Nama kosong",
+    "data": {
+      "nama":"",
+      "username": "alifahmad",
+      "password": "password123",
+      "repassword": "password123"
+    },
+    "expected": "Nama tidak boleh kosong"
+  },
+  {
+    "testcase_name": "Field username kosong",
+    "data": {
+      "nama":"ahmad",
+      "username": "",
+      "password": "password123",
+      "repassword": "password123"
+    },
+    "expected": "Username tidak boleh kosong"
+  },
+  {
+    "testcase_name": "Username sudah digunakan",
+    "data": {
+      "nama":"alifsofian",
+      "username": "ahmad",
+      "password": "password123",
+      "repassword": "password123"
+    },
+    "expected": "Username sudah dipakai"
+  },
+  
+  {
+    "testcase_name": "Field password kosong",
+    "data": {
+      "nama":"alifsofian",
+      "username": "alifahmaaad",
+      "password": "",
+      "repassword": "password123"
+    },
+    "expected": "Password tidak boleh kosong"
+  },
+  {
+    "testcase_name": "Password kurang dari 8 karakter",
+    "data": {
+      "nama":"alifsofian",
+      "username": "alifahmaaad",
+      "password": "passwo",
+      "repassword": "passwo"
+    },
+    "expected": "Password harus terdiri dari 8 karakter atau lebih"
+  },
+  {
+    "testcase_name": "Field konfirmasi password kosong",
+    "data": {
+      "nama":"alifsofian",
+      "username": "alifahmaaad",
+      "password": "password123",
+      "repassword": ""
+    },
+    "expected": "Confirmation password tidak boleh kosong"
+  },
+  {
+    "testcase_name": "Password konfirmasi tidak cocok",
+    "data": {
+      "nama":"alifsofian",
+      "username": "alifahmaaad",
+      "password": "password123",
+      "repassword": "password456"
+    },
+    "expected": "Confirmation password tidak cocok"
+  },
+  {
+    "testcase_name": "Seluruh field terisi dengan benar",
+    "data": {
+      "nama":"ahmad alif Sofian",
+      "username": "alifahmaaad",
+      "password": "password123",
+      "repassword": "password123"
+    },
+    "expected": "Berhasil Registrasi"
+  }
+]
